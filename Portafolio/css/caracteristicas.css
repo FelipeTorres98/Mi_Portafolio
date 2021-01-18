@@ -1,0 +1,198 @@
+#academica{
+    background-color: #0550f2;
+    text-decoration: solid;
+    color: rgb(0, 0, 0);
+}
+
+#titulo{
+    color: black;
+    text-transform:capitalize;
+    border:#0550f2 5px dashed;
+}
+
+#yo{
+    text-decoration: solid;
+    color: rgb(0, 0, 0);
+}
+#al{
+    
+}
+
+#button {
+    padding: 0;
+}
+
+#button li {
+    display: inline;
+}
+
+#button li a {
+    font-family: Arial;
+    font-size: 45px;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    background-color: rgb(142, 5, 233);
+    color: #fff;
+}
+
+#button li a:hover {
+    background-color: #01c6f7;
+    margin-top: -2;
+    padding-bottom: 12px;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #eee;
+    width: 100%;
+}
+
+input#abrir-cerrar {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+label[for="abrir-cerrar"] {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+}
+
+.cerrar {
+    display: none;
+}
+
+#sidebar {
+    width: 0;
+}
+
+#contenido {
+    margin-left: 0;
+}
+
+input#abrir-cerrar:checked~#sidebar {
+    width: 300px;
+}
+
+input#abrir-cerrar:checked+label[for="abrir-cerrar"],
+input#abrir-cerrar:checked~#contenido {
+    margin-left: 300px;
+    transition: margin-left .4s;
+}
+
+input#abrir-cerrar:checked+label[for="abrir-cerrar"] .cerrar {
+    display: inline;
+}
+
+input#abrir-cerrar:checked+label[for="abrir-cerrar"] .abrir {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #00324b;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.sidebar ul,
+.sidebar li {
+    margin: 0;
+    padding: 0;
+    list-style: none inside;
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width: 200px;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #fff;
+    background-color: rgb(255, 102, 0);
+}
+
+h1 {
+    color: rgb(2, 2, 1);
+    font-size: 180%;
+    font-weight: normal;
+}
+
+#contenido {
+    transition: margin-left .4s;
+    padding: 1rem;
+}
+
+.abrir-cerrar {
+    color: #2E88C7;
+    font-size: 1rem;
+}
+
+/*footer {
+    position: relative;
+    /* Altura total del footer en px con valor negativo */
+/*    margin-top: 5px;
+    /* Altura del footer en px. Se han restado los 5px del margen
+               superior mas los 5px del margen inferior
+            */
+/*    height: 280px;
+/*    padding: 5px 0px;
+/*    clear: both;
+/*    background: #286af0;
+/*    text-align: center;
+/*    color: #fff;
+/*}
+
+
+/* Esta clase define la anchura del contenido y la posicion centrada 
+           El contenido queda centrado y limitado, pero la cabecera y el pie
+           llegan hasta los limites del navegador.
+        
+
+.define {
+    width: 960px;
+    margin: 0 auto;
+}*//*/
